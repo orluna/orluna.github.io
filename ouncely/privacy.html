@@ -33,7 +33,7 @@
 <body>
 
 <h1>Ouncely Privacy Policy</h1>
-<p class="updated">Last updated: 25 September 2026</p>
+<p class="updated">Last updated: 13 October 2026</p>
 
 <p>
   Ouncely is a pumping and milk stash tracker for Android. This policy explains
@@ -85,8 +85,11 @@
 <ul>
   <li>Pump sessions: start and end time, duration, left and right amounts, which side, where the milk went, and any note you add</li>
   <li>Stash bags: amount, date stored, location, expiry date, status and any label</li>
+  <li>Bottle feeds you log: time, amount, where the milk came from (fresh, pitcher, a stash bag, formula or nursing) and any note</li>
+  <li>Your pitcher, if you use one: how much milk is in it and when you started it</li>
+  <li>Day tags you choose, such as &ldquo;little sleep&rdquo; or &ldquo;sick&rdquo;</li>
   <li>Baby details you choose to enter: a name and how much your baby drinks per day</li>
-  <li>Your settings: units, reminder times, quiet time, theme, and whether app lock is on</li>
+  <li>Your settings: units, reminder times and style, pauses, quiet time, theme, and whether app lock is on</li>
 </ul>
 <p>
   When you uninstall Ouncely, this data is removed with it. You can also delete
@@ -137,6 +140,16 @@
   connection, Google's servers see your phone's IP address while the summary is
   being sent or read.
 </p>
+<p>
+  To keep fake copies of the app and automated scripts away from these
+  summaries, Ouncely uses <strong>Firebase App Check</strong> with the
+  <strong>Google Play Integrity API</strong>. When the app talks to Firebase,
+  Google Play checks that the request comes from the genuine Ouncely app on a
+  real device. For this check Google processes technical information about the
+  app and the device, under Google's own privacy policy. It contains none of
+  your pumping, stash or baby information, and Ouncely does not receive or
+  store it.
+</p>
 
 <h3>What is shared</h3>
 <p>Only a short summary, refreshed as you log pumps:</p>
@@ -146,8 +159,12 @@
   <li>Your daily goal (how much your baby drinks per day)</li>
   <li>When your last pump ended</li>
   <li>When the summary was last updated</li>
-  <li>Your stash total, the number of bags, and how many expire soon</li>
+  <li>The milk you can still use (stash bags that have not expired, plus your pitcher), the number of those bags, and how many expire soon</li>
 </ul>
+<p>
+  Bottle feeds, pitcher details, day tags and notes are never part of the
+  summary.
+</p>
 
 <h3>What your partner's phone tells you</h3>
 <p>
@@ -169,6 +186,12 @@
   phone so the app can show it without asking the server every time. Both are
   removed when you stop following, and the stored summary is also wiped from
   your phone if she stops sharing with you.
+</p>
+<p>
+  When you follow someone's code, Ouncely can switch to a view-only
+  <em>partner view</em> that shows only their summary. This does not collect
+  anything new: it simply hides logging on your phone. Anything you had logged
+  yourself stays on your phone and comes back when you stop following.
 </p>
 
 <h3>What is never shared</h3>
@@ -244,10 +267,12 @@
   stop them, turn sharing off, or make a new code.
 </p>
 
-<h2>Backups</h2>
+<h2>Backups and spreadsheet export</h2>
 <p>
-  Ouncely can export your data to a JSON file that you choose the location for.
-  That file belongs to you. If you save it to a cloud drive or email it to
+  Ouncely can export your data to a backup file (JSON) or to spreadsheet files
+  (CSV) for your pumps, stash bags or bottle feeds. You choose where each file
+  is saved, and after saving the app can offer your phone's own share menu.
+  These files belong to you. If you save it to a cloud drive or email it to
   yourself, it is then handled by that service under their terms, not ours.
   Ouncely does not perform any automatic cloud backup.
 </p>
@@ -305,8 +330,10 @@
 <h2>If you buy Premium</h2>
 <p>
   Purchases go through Google Play Billing. Google handles the payment, and
-  Ouncely only receives confirmation of whether a purchase is active. We never
-  see your card details, your name or your billing address.
+  Ouncely only receives confirmation of whether a purchase is active. The app
+  checks Google's signature on that confirmation on your phone, to make sure it
+  really came from Google Play. We never see your card details, your name or
+  your billing address.
 </p>
 <p>
   <strong>Premium removes ads completely.</strong> On a Premium device the
@@ -349,6 +376,16 @@
   when you turn them on, and they are generated on your device by your own
   settings. Nothing is sent through a server. If you decline the notification permission,
   the rest of the app keeps working.
+</p>
+<p>
+  <strong>What reminders show.</strong> A reminder can include the time, which
+  pump of the day it is, today's total, your last pump and when the next one is
+  due. On the lock screen the normal notification shows only &ldquo;Time to
+  pump&rdquo;. If you choose the <em>Alarm</em> reminder style with
+  <em>Full-screen alarm</em> on, the reminder opens over your lock screen and
+  shows those details to anyone who can see your screen. You can turn
+  <em>Full-screen alarm</em> off in Settings &rarr; Pump reminders, or use the
+  <em>Gentle</em> style.
 </p>
 <p>
   The one exception is partner sharing. While it is on, your phone checks
